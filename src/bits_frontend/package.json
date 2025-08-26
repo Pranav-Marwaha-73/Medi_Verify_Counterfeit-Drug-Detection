@@ -30,8 +30,8 @@
     "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\"",
     "prebuild": "dfx generate",
     "setup": "npm i && dfx canister create bits_backend && dfx generate bits_backend && dfx deploy",
-    "start": "vite --port 3000",
-    "test": "vitest run"
+    "build": "tsc && vite build"
+
   },
   "type": "module",
   "version": "0.0.0"
